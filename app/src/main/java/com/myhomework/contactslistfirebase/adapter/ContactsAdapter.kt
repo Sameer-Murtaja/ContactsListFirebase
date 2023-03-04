@@ -30,8 +30,9 @@ class ContactsAdapter(var data: ArrayList<Contact>): RecyclerView.Adapter<Contac
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.cardViewBinding.apply {
-            tvTaskName.text = data[position].name
-            tvDate.text = data[position].address
+            tvContactName.text = data[position].name
+            tvContactNumber.text = data[position].number
+            tvContactAddress.text = data[position].address
         }
 
 
